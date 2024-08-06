@@ -1,0 +1,113 @@
+*,::after,::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main.corps-de-sign-up {
+    position: relative;
+    background-image: url(../images/fond1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.page-sign-up {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 60px;
+}
+
+section.container-formulaire-sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: auto;
+    margin: auto;   
+    transform: translateY(20%);
+    padding: 40px 0px;
+    border-radius: 3px;
+    background-color: #253e51c9;
+    z-index: 2;
+}
+
+.container-titre-sign-up {
+    margin-bottom: 20px;
+}
+
+.titre-sign-up {
+    font-size: 2rem;
+    font-weight: 900;
+    text-shadow: 0px 0px 8px white;
+}
+
+form.formulaire-sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 400px;  
+}
+
+form.formulaire-sign-up label {
+    font-size: 1rem;
+    font-weight: 600;
+    text-shadow: 0px 0px 8px white;
+    letter-spacing: 1px;
+}
+
+form.formulaire-sign-up input,
+form.formulaire-sign-up select {
+    width: 300px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 0 10px;
+}
+
+.champs-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 5px 0;
+    height: 40px;
+}
+
+p.text-have-account {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+p.text-have-account a {
+    color: rgb(243, 186, 153);
+}
+
+button.btn-sign-up {
+    padding: 5px 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    background: linear-gradient(157deg,#1fafe49d, #da11339c);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+
+button.btn-sign-up:hover {
+    background: linear-gradient(157deg,rgb(230, 40, 6),rgb(230, 40, 6));
+    color: white;
+}
