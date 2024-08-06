@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style propre de index.php -->
     <link rel="stylesheet" href="./style/index.css" type="text/css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="./fontawesome-free-6.0.0-beta3-web/css/all.min.css" type="text/css">
@@ -34,7 +35,7 @@
                 <span class="nav-sitename"><span>IA</span>natra</span>
                 <div class="nav-container-itemsnav">
                     <ul>
-                        <li class="itemnav-home"><a href="#" class="itemnav-lien">HOME</a></li>
+                        <li class="itemnav-home"><a href="index.php" class="itemnav-lien">HOME</a></li>
                         <li class="itemnav-about"><a href="#" class="itemnav-lien">ABOUT</a></li>
                         <li class="itemnav-services"><a href="#" class="itemnav-lien">SERVICES</a></li>
                         <li class="itemnav-contact"><a href="#" class="itemnav-lien">CONTACT</a></li>
@@ -51,10 +52,10 @@
                         </button>
                     </div>
                     <div class="container-login">
-                        <a href="#">
+                        <a href="login.php">
                             <i class="fa fa-user"></i>
+                            <span class="texte-login">LOGIN</span>
                         </a>
-                        <span class="texte-login">LOGIN</span>
                     </div>
                 </div>
             </nav>
@@ -74,7 +75,7 @@
         </main>
         <!-- footer accueil -->
         <footer class="footer-accueil">
-            <span class="texte-copyright">copy right e-learning ©</span>
+            <span class="texte-copyright">Copyright @e-learning © IA-natra</span>
             <div class="container-texte-auteur">Author: Tomefy Andry Tsiresy</div>
         </footer>
     </div>
