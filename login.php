@@ -26,11 +26,11 @@
                 <form action="#" method="post" class="formulaire-login">
                     <div class="champ-form champ-user">
                         <label for="input-username">Username</label>
-                        <input type="text" id="input-username">
+                        <input type="text" id="input-username" require>
                     </div>
                     <div class="champ-form champ-password">
                         <label for="input-password">Password</label>
-                        <input type="password" id="input-password">
+                        <input type="password" id="input-password" require>
                         <span class="fas fa-eye-slash" id="icon-eye"></span>
                     </div>
                     <p class="texte-sign-up">No account ? <a href="sign_up.php">Sign up here</a></p>

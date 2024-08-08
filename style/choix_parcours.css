@@ -1,0 +1,126 @@
+*,::after,::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-choix-parcours {
+    position: relative;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 60px;
+}
+
+main.corps-de-choix-parcours {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #11273f;
+    background-image: url(../images/fond2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section.section-texte-welcome {
+    background-color: #253e51c9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 40px 60px;
+    border-radius: 5px;
+    margin-top: 10%;
+    margin-bottom: 50px;
+    z-index: 2;
+}
+
+.titre-bienvenue {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 5px white;
+}
+
+.sous-titre-bienvenue {
+    font-size: 1.1rem;
+    text-shadow: 0px 0px 6px white;
+}
+
+section.section-parcours {
+    z-index: 2;
+    background-color: #253e51c9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.container-liste-parcours {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 800px;
+    height: auto;
+    z-index: 2;
+    gap: 10px;
+}
+
+.texte-choix-parcours {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-shadow: 0px 0px 8px white;
+}
+
+.article-parcours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(253, 253, 233, 0.705);
+    width: 24.5%;
+    height: auto;
+    padding: 5px;
+    gap: 10px;
+    border-radius: 5px;
+} 
+
+.article-parcours a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-around;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+}
+
+.container-img-parcours {
+    height: auto;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.article-parcours-titre,
+.article-parcours a {
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: black;
+}
+
+.image-parcours {
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
+}

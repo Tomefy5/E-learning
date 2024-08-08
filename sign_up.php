@@ -29,15 +29,15 @@ include("data.php");
                 <form action="#" class="formulaire-sign-up" method="post">
                     <div class="champs-form champ-username">
                         <label for="input-username" class="label-username">Username</label>
-                        <input type="text" id="input-username">
+                        <input type="text" id="input-username" require>
                     </div>
                     <div class="champs-form champ-date-naissance">
                         <label for="input-date-naissance">Birthday</label>
-                        <input type="date" id="input-date-naissance">
+                        <input type="date" id="input-date-naissance" require>
                     </div>
                     <div class="champs-form champ-location">
                         <label for="select-pays">Location</label>
-                        <select name="choice-country" id="choix-pays">
+                        <select name="choice-country" id="choix-pays" require>
                             <?php for($i = 0; $i < count($pays); $i++) { ?>
                                 <option value="<?php echo $pays[$i]; ?>"><?php echo $pays[$i]; ?></option>
                             <?php } ?>
@@ -45,11 +45,11 @@ include("data.php");
                     </div>
                     <div class="champs-form champ-mdp">
                         <label for="input-mdp" class="label-mdp">Password</label>
-                        <input type="password" id="input-mdp">
+                        <input type="password" id="input-mdp" require>
                     </div>
                     <div class="champs-form champ-conf-mdp">
                         <label for="input-conf-mdp" class="label-conf-mdp">Confirm Password</label>
-                        <input type="password" id="input-conf-mdp">
+                        <input type="password" id="input-conf-mdp" require>
                     </div>
                     <p class="text-have-account">Already have an account ? <a href="login.php">Sign in</a></p>
                     <button type="submit" class="btn-sign-up">Sign Up</button>
