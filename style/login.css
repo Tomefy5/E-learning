@@ -24,6 +24,25 @@ main.corps-de-login {
     position: relative;
 }
 
+.container-error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    width: 300px;
+    border-radius: 5px;
+    background-color: rgb(243, 134, 170);
+    margin: auto;
+    margin-top: 50px;
+}
+
+.error-message {
+    color: red;
+    font-weight: 600;
+    font-size: 1rem;
+    text-shadow: 0px 0px 5px white;
+}
+
 .container-formulaire-login {
     display: flex;
     flex-direction: column;
@@ -31,7 +50,7 @@ main.corps-de-login {
     width: 23%;
     height: auto;
     margin: auto;   
-    transform: translateY(40%);
+    transform: translateY(30%);
     padding: 40px 0px;
     border-radius: 3px;
     background-color: #253e51be;

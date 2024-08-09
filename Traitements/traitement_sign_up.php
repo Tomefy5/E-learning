@@ -44,4 +44,5 @@ $dbname = "ianatra_db";
     echo "Error: " . $e -> getMessage();
  }
 
+ $conn = null;
 ?>

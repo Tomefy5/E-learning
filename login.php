@@ -1,3 +1,8 @@
+<?php 
+if(isset($_GET['error'])) {
+    $error = urldecode($_GET['error']);
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,19 +23,24 @@
         <!-- corps de login.php -->
         <main class="corps-de-login">
             <div class="filtre-fond"></div>
+            <?php if(isset($error)) { ?>
+                <div class="container-error">
+                    <p class="error-message"><?php echo $error; ?></p>
+                </div>
+            <?php } ?>
             <section class="container-formulaire-login">
                 <div class="container-titre-login">
                     <h2 class="titre-login">LOGIN</h2>
                     <div class="soulignement"></div>
                 </div>
-                <form action="#" method="post" class="formulaire-login">
+                <form action="Traitements/traitement_login.php" method="post" class="formulaire-login">
                     <div class="champ-form champ-user">
                         <label for="input-username">Username</label>
-                        <input type="text" id="input-username" require>
+                        <input type="text" id="input-username" name="input-username" required>
                     </div>
                     <div class="champ-form champ-password">
                         <label for="input-password">Password</label>
-                        <input type="password" id="input-password" require>
+                        <input type="password" id="input-password" name="input-password" required>
                         <span class="fas fa-eye-slash" id="icon-eye"></span>
                     </div>
                     <p class="texte-sign-up">No account ? <a href="sign_up.php">Sign up here</a></p>
